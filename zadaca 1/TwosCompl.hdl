@@ -1,0 +1,23 @@
+CHIP TwosCompl
+{
+	IN in[16];
+	OUT out[16];
+	
+	PARTS:
+	Not16 (in = in, out = n);
+	Add16 (a = n , b[0] = true, out = out);
+	Add16 (a = n , b[1] = false, out = out1);
+	Add16 (a = n , b[2] = false, out = out2);
+	Add16 (a = n , b[3] = false, out = out3);
+	Add16 (a = n , b[4] = false, out = out4);
+	Add16 (a = n , b[5] = false, out = out5);
+	Add16 (a = n , b[6] = false, out = out6);
+	Add16 (a = n , b[7] = false, out = out7);
+	Add16 (a = n , b[8] = false, out = out8);
+	Add16 (a = n , b[9] = false, out = out9);
+	Add16 (a = n , b[10] = false, out = out10);
+	Add16 (a = n , b[11] = false, out = out11);
+	Add16 (a = n , b[12] = false, out = out12);
+	Add16 (a = n , b[13] = false, out = out13);
+	Add16 (a = n , b[14] = false, out = out14);
+}
